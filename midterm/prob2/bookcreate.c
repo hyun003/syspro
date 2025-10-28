@@ -16,8 +16,8 @@
  perror(argv[1]);
  exit(2);
  }
- printf("%-9s %-8s %-4s\n", "id", "bookname", "author");
- while (scanf("%d %s %s", &record.id, record.bookname, &record.author) == 3) {
+ printf("%-9s %-8s %-4s %-4s %-4s %-4s\n", "id", "bookname", "author", "year", "numofborrow", "borrow");
+ while (scanf("%d %s %s %d %d %d %d", &record.id, record.name, &record.score, recorod.year, recorod.numofborrow, recorod.borrow) == 3) {
  lseek(fd, (record.id - START_ID) * sizeof(record), SEEK_SET);
  write(fd, (char *) &record, sizeof(record) );
  }

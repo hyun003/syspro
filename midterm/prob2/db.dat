@@ -2,10 +2,10 @@
 #define START_ID 1
 
 struct student {
-	int id;
-	char bookname[MAX];
-	char author;
-	int year;
-	int numofborrow;
-	int borrow;
-}
+char name[MAX];
+int id;
+char score;
+int year
+int numofborrow
+int borrow
+};
